@@ -1,0 +1,187 @@
+﻿@import "./prefixer.less";
+
+@media (min-device-height: 460px) and (orientation:portrait) { 
+	#ChooseYourLangs
+	{
+		min-height:460px;
+		background-image:url(/views/generic/bb2images/selectlangs/world-320.jpg);
+		background-position:bottom;
+		background-repeat:no-repeat;
+		background-size:100%;
+	}
+}
+
+h2 {
+	clear: both;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	margin: 0;
+}
+
+
+#ChooseYourLangs .container 
+{
+    margin: 10px 10px 10px 10px;
+}	
+
+.container-steps{
+	text-align:center;
+	margin:0 10px;
+	height:60px;
+
+	
+	.step, .next, .finish{
+		float:left;		width: 20%;		font-size:16px;		font-weight:bold;		color:#fff;		padding:10px 0;
+		margin:10px 0; 
+	}	.finish 
+    {
+		background-color:#ccc;
+    }	.step 
+    {
+		background-color: #CCC;
+		&.selected 
+		{
+			background-color: #f29400;
+		}
+    }
+}.container-blocks
+{
+	position: absolute;
+	left: 0;right: 0;
+	height: 200px; // it has to be changed when new languages are being added
+	overflow: hidden;
+	#nativeLangs, #targetLangs 
+    {
+    	position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+    }
+	#nativeLangs.speakingFlags
+    {
+		.list 
+        {
+         a
+         {
+         	 background-position:right;
+			  background-repeat:no-repeat;
+         }
+        }
+    }
+}body.html5  
+{
+	#nativeLangs 
+	{
+		.transition(All 1s ease-out);
+		.transform(translate3d(0,0,0));
+		&.hide 
+		{
+			.transform(translate3d(-120%,0,0));
+		}
+	}
+
+	#targetLangs 
+	{
+		.transition(All 1s ease-out);
+		.transform(translate3d(100%,0,0));
+		&.show 
+		{
+			.transform(translate3d(0,0,0));
+		}
+	}
+}#nativeLangs 
+{
+	text-align:left;
+	.list 
+    {
+    	margin-top:12px;
+    }
+	a {
+		clear: both;
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 5px 10px;
+		padding: 8px 8px;
+		display: block;
+		text-decoration: none;
+		&.a1
+        {
+			background-color: #F71926;
+        }
+		&.a2
+        {
+        	background-color: #F95B2C;
+        }
+		&.a3
+        {
+        	background-color:#F29400;
+        }
+		&.a4 
+        {
+        	background-color:#3CB238;
+        }
+		&.a5 
+        {
+        	background-color:#32A9E3;
+        }
+		&.a6
+        {
+        	background-color:#31074F;
+        }
+		&.a7 
+        {
+        	background-color:#090230;
+        }
+	}
+}
+
+
+
+
+#targetLangs 
+{
+	.wrp
+    {
+    	text-align: center;
+		margin: 10px;
+		background-color: #EBEBEB;
+		padding: 20px 10px;
+    }
+}
+a.flags_btn {
+	.transition(All 1s ease);
+	display: inline-block;
+	padding: 8px 8px;
+	font-size: 13px;
+	text-decoration: none;
+	text-align: center;
+	color: #4117D8;
+
+	img 
+    {
+    	margin-bottom: 2px;
+		width: 60px;
+		height: 35px;
+    }
+
+	&:hover, &.selected 
+    {
+        .border-radius(8px);
+		background-color: #cfcfcf;
+		color: #0068B5;
+    }
+
+	span
+    {
+    	padding-bottom: 1px;
+		border-bottom: 1px solid #4117D8;
+    }
+}
+
+#back_btn {
+	margin: 10px 0 10px 10px;
+	text-align:left;
+}

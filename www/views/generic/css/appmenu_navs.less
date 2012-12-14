@@ -1,0 +1,108 @@
+﻿@import "./prefixer.less";
+
+body.html5
+{
+	.appmenu_navs
+    {
+    	position: fixed;
+		bottom: 0;
+    }
+}
+
+.appmenu_navs {
+	padding: 0;
+	width: 100%;
+	height: 45px;
+	background-color: #0068B5;
+	border-top: 1px solid #002845;
+	border-bottom: 1px solid #002845;
+	-moz-box-shadow: 0 1px 0 #569dd2;
+	-webkit-box-shadow: 0 1px 0 #569dd2;
+	-o-box-shadow: 0 1px 0 #569dd2;
+	-khtml-box-shadow: 0 1px 0 #569dd2;
+	box-shadow: 0 1px 0 #569dd2;
+	text-align: center;
+	
+	overflow: hidden;
+
+	a 
+    {
+		color: white;
+		font-size: 12px;
+		text-align: center;
+		text-decoration: none;
+		line-height: 50px;
+		width: 100%;
+		height: 45px;
+		display: block;
+
+		img 
+        {
+        	width: 20px;
+			height: 20px;
+			margin: 0 5px 0 0;
+			vertical-align: middle;
+        }
+    }
+
+	
+}
+
+.appmenu_navs 
+{
+	.back
+    {
+    	background-color: #E15D1C;
+    }
+
+	.home 
+    {
+		background-color:#0e7dd0;
+    }
+
+	.translate 
+    {
+    	background-color:#f1ac0e;
+    }
+}
+
+body.html5 
+{
+	.container
+    {
+    	margin-bottom:60px;
+    }
+
+	.appmenu_navs
+    {
+		.back 
+		{
+    		.gradient(#E15D1C, #E15D1C, #CE461D);
+			.box-shadow3(inset -1px 0 #003e6c, inset -2px 0 #DA7B4B, inset 0 1px #ff9662);
+			&:hover
+			{
+				.gradient(#e97b37, #e97b37, #db693b);
+			}
+		}
+
+		.home 
+		{
+			.gradient(#0e7dd0, #0e7dd0, #0c66a9);
+			.box-shadow4(inset 1px 0 #1b8ecd, inset -1px 0 #003e6c, inset -2px 0 #1b8ecd, inset 0 1px #38aee4);
+			&:hover
+			{
+        		.gradient(#1d97db, #1d97db, #1983bd);
+			}
+		}
+
+		.translate 
+		{
+			.gradient(#f1ac0e, #f1ac0e, #e96601);
+			.box-shadow2(inset 0 1px #ff9662, inset -1px 0 #da7b4c);
+			&:hover
+			{
+        		.gradient(#f5bf1d,#f5bf1d, #ef8403);
+			}
+		}
+    }
+}

@@ -1,0 +1,490 @@
+﻿@import "./prefixer.less";
+
+ 
+/* navigation bar at the top of flash cards */       
+.flash_navs {
+	.gradient(#EEECEC, #EEECEC, #E6E6E6);
+    float: none;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #A7A6A6;
+    width: 100%;
+    height: 45px;
+
+	a 
+    {
+		.box-shadow2(inset 1px 0 #f3f3f3, inset -1px 0 #a7a6a6);
+		width:25%;
+		display:block;
+		float:left;
+		height:45px;
+		&:hover 
+        {
+        	background-color:#f5f5f5;
+        }
+    }
+	
+	#flash_nav_Back, #flash_nav_Forawrd 
+    {
+    	padding: 0 20px;
+    }
+
+	#flash_nav_Back img, #flash_nav_Forawrd img 
+    {
+		width: 40px; height: 40px;
+    }
+
+	#flash_nav_Back
+    {
+    	float: left;
+    }
+
+	#flash_nav_Forawrd
+    {
+    	float: right;
+    }
+
+	#flash_nav_PlusWords img
+    {
+		margin: 5px 10px 0 10px;
+		padding: 0;
+		vertical-align: top;
+		width: 80px; height: 30px;
+    }
+}
+
+.step-title
+{
+	background-color: #0068B5;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	padding: 4px 0;
+	margin: 0;
+	border-bottom: 1px solid #A0A0A0;
+}
+
+#level_notification 
+{
+	padding: 10px;
+	background-color: #C9F3A7;
+	color: #079608;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+body.html5
+{
+	#level_notification 
+    {
+    	.transition(All .7s ease-out);
+		height: 0px;
+		overflow:hidden;
+		padding:0;
+		&.show 
+        {
+			height:auto;
+			overflow:visible;
+			padding: 10px;
+        }
+    }
+}
+
+
+
+#steps {
+    margin: 0 auto 0 auto;
+}
+
+.step 
+{
+	display: none;
+
+
+	.word 
+    {
+		text-align: center;
+		padding: 10px 10px;
+        div 
+        {
+            margin: 2px 0;
+			padding: 0;
+			font-size: 16px;
+			font-weight: bold;
+        }
+		div.image img 
+        {
+            width: 167px; height: 111px;
+        }
+		div.speaker img 
+        {
+            widht:30px; height: 30px;
+        }
+    }
+
+	.dialog 
+    {
+		.title 
+        {
+            .step-title();
+			font-size:14px;
+        }
+    }
+	.dialog .content
+    {
+		margin: 5px 10px;
+			
+		border-collapse: collapse;
+		border-spacing: 0;
+
+		thead tr th 
+        {
+			&.A 
+            {
+                color: #41A62A;
+            }
+			background-color: white;
+			border: 1px solid #E3E3E3;
+			font-weight:normal;
+			vertical-align:bottom;
+
+			&.B 
+            {
+                color: #0068B5;
+            }
+        }
+
+		tr.line 
+        {
+			td.text
+            {
+				width: 100%;
+				padding: 5px 5px;
+				background-color: white;
+				border: 1px solid #E3E3E3;
+            }
+
+			td.speaker 
+            {
+                padding: 0 5px;
+				border: 1px solid #E3E3E3;
+				background-color: #F6F6F6;
+				img 
+                {
+                    border: 0;
+                }
+            }
+        }
+
+		tr.line.byA.target
+        {
+            color: #41A62A;
+        }
+		tr.line.byA.native 
+        {
+            color: #AECDA6;
+        }
+
+        tr.line.byB.target
+        {
+            color: #0068B5;
+        }
+		tr.line.byB.native 
+        {
+            color: #AEBFCD;
+        }
+
+		tr.space td 
+        {
+            height: 3px;
+        }
+	}
+		
+	.missingWordTest 
+    {
+		.step-title 
+        {
+			font-size:14px;
+        }
+
+		.sentence 
+        {
+            margin: 10px 17px 15px 17px;
+			font-size: 16px;
+        }
+
+		.dialog  
+        {
+			.container 
+            {
+				padding: 5px 10px;
+            }
+			table.content 
+            {
+                width: 100%;
+				margin: 0;
+            }
+			td.image 
+            {
+                text-align:center;
+				padding-bottom:10px;
+            }
+        }
+    }
+
+	.multipleChoiceTest 
+    {
+
+		.question
+        {
+			.image 
+            {
+                text-align: center;
+				margin: 5px auto 5px auto;
+				img 
+                {
+                    width: 167px; height: 111px;
+                }
+            }
+        }
+    }
+
+	.missingWordTest .choices, .multipleChoiceTest .choices 
+    {
+        margin: 0 15px;
+		.choice 
+        {
+            display: block;
+			margin: 5px 10px 5px 10px;
+			background: #F6F6F6;
+			border: 1px solid #A0A0A0;
+			color: #666; text-decoration:none;
+
+			.letter 
+            {
+                color: white;
+				font-weight: bold;
+				background-color: #0068B5;
+				padding: 10px;
+				float: left;
+            }
+
+			.text 
+            {
+				padding: 10px 5px 10px 5px;
+				display: block;
+				margin-left: 30px;
+            }
+
+			&:hover 
+            {
+				//color: #00F;
+				.text 
+                {
+					background-color:#FFFF7F;
+                }
+            }
+
+			&.selected 
+			{
+				.text 
+				{
+					background-color: #DDDDFF;
+				}
+
+				&.wrong 
+				{
+                	.text 
+					{
+                    	background-image: url('../bb2images/test-wrong.gif');
+						background-repeat: no-repeat;
+						background-size: 35px;
+						background-position: right center;
+						background-color: #EB533A;
+						color: white;
+					}
+				}
+
+				&.correct 
+				{
+                	.text 
+					{
+                    	background-image: url('../bb2images/test-correct.gif');
+						background-repeat: no-repeat;
+						background-size: 35px;
+						background-position: right center;
+						background-color: #6BC125;
+						color: white;
+					}
+				}
+			}
+
+        }
+    }
+
+	.multipleChoiceTest.native2Target .choices  
+    {
+		margin-bottom:15px;
+		margin-top: 5px;
+    }
+	.multipleChoiceTest.target2Native .choices 
+    {
+        margin: 15px;
+    }
+
+	.missingWordTest .answer, .multipleChoiceTest .answer
+    {
+        .state 
+        {
+            height: 121px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			margin: 15px 0;
+        }
+    }
+
+	.missingWordTest .answer.correct, .multipleChoiceTest .answer.correct
+    {
+		.step-title 
+		{
+			background-color: #41A62A;
+		}
+
+		.state 
+        {
+            background-image: url('../bb2images/correct.jpg');
+        }
+	}
+
+	.missingWordTest .answer.wrong, .multipleChoiceTest .answer.wrong
+    {
+        .step-title 
+        {
+            background-color: #CB2121;
+        }
+
+		.state 
+        {                
+			background-image: url('../bb2images/wrong.jpg');
+        }
+    }
+
+	.endOfLevel 
+    {
+		text-align:center;
+
+        .score 
+        {
+				background-color: gainsboro;
+				height: 36px;
+				clear: both;
+				margin-bottom: 45px;
+			.your-score 
+            {
+				font-size: 14px;
+				background: url(/../bb2images/score_bg.jpg) no-repeat;
+				display: block;
+				width: 220px;
+				height: auto;
+				text-align: center;
+				margin: 0 auto 40px auto;
+				padding: 15px 0;
+					
+				.number 
+				{
+					clear: both;
+					font-size: 40px;
+					color: #41A62A;
+					font-weight: bold;
+				}
+            }
+        }
+
+		.nav 
+        {
+            margin: 10px 10px 20px 10px;
+        }
+
+		a.button 
+        {
+			font-weight:bold;
+			margin-bottom:7px;
+			padding-top: 7px; padding-bottom:7px;
+        }
+    }
+
+	.endOfLevel.failed 
+    {
+        .score .your-score .number
+        {
+            color: #FFA500;
+        }
+    }
+}
+
+
+body.n-rtl 
+{
+	.step .multipleChoiceTest.target2Native .choices .choice .text
+    {
+		margin-right: 30px;
+		text-align: right;
+		direction: rtl;
+		margin-left:0px;
+    }
+
+	.step .multipleChoiceTest.target2Native .choices .choice.selected.wrong .text,
+	.step .multipleChoiceTest.target2Native .choices .choice.selected.correct .text
+    {
+		background-position: left center;
+    }
+
+	.step .multipleChoiceTest.target2Native .choices .choice .letter
+    {
+    	float: right;
+    }
+}
+
+
+body.html5 
+{
+	overflow-y: auto;
+
+	#levels_container
+	{
+		position: relative;
+		left: 0;
+		right: 0;
+		margin-bottom: 47px;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		top: 0;
+	}
+
+	#steps 
+    {
+		position:relative;
+		.step 
+        {
+        	position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			.transition(All .5s ease-out);
+			.transform(translate3d(0,0,0));
+
+			&.next 
+            {
+            	.transform(translate3d(100%,0,0));
+            }
+
+			&.last 
+            {
+            	.transform(translate3d(-100%,0,0));
+            }
+        }
+    }
+}

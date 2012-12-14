@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script src="scripts/lib/jQuery.js"></script>
+        <script src="scripts/lib/amplify.js"></script>
+        <script src="scripts/lib/_.js"></script>
+        <script src="scripts/lib/handlebars.js"></script>
+        <script src="scripts/lib/toucnwipe.js" defer="defer"></script>
+        <script src="scripts/utils.js"></script>
+        <script src="scripts/common.js"></script>
+        
+        <meta name="viewport" content="width=320" />
+        <meta charset='utf-8' />
+
+
+        <script>
+            if(!!user.native && !!user.target){
+                // if user has a native and a target lang
+                window.location = 'Home.html';
+
+            }
+        </script>
+        
+        <title>Babelbay</title>
+
+        <link href="views/generic/css/styles.less" rel="stylesheet/less" type="text/css" />
+        <link href="views/generic/css/chooseLangsView.less" rel="stylesheet/less" type="text/css" />
+        <script src="scripts/lib/less.js"></script>
+
+    </head>
+    <body class="chooseYourLangs">
+        <div id="sc_u"></div>
+        <div class="page" id="ChooseYourLangs">
+            
+            
+            <script type="text/javascript">
+                langs = [{"Code":"ar","Name":{"ar":"العربية","en":"Arabic","es":"Árabe","hi":null,"ru":"арабский","de":"Arabisch","pl":"Arabski","fr":"Arabe","si":"අරාබි"},"AvailableAsNative":true,"AvailableAsTarget":true,"Language":{"name":{"en":{"Native":"Arabic","Target":"Arabic","TTS":"Arabic","Value":"Arabic"},"ar":{"Native":"العربية","Target":"","TTS":"العربية","x":"العربية","r":""},"es":{"Native":"Árabe","Target":"Árabe","TTS":"Árabe","Value":"Árabe"},"hi":null,"ru":{"Native":"арабский","Target":"","TTS":"арабский","x":"арабский","r":""},"de":{"Native":"Arabisch","Target":"Arabisch","TTS":"Arabisch","Value":"Arabisch"},"pl":{"Native":"Arabski","Target":"Arabski","TTS":"Arabski","Value":"Arabski"},"fr":{"Native":"Arabe","Target":"Arabe","TTS":"Arabe","Value":"Arabe"},"si":{"Native":"අරාබි","Target":"අරාබි","TTS":"අරාබි","Value":"අරාබි"}},"flagPostFixCountries":{"codes":"ae,bh,eg,iq,jo,kw,om,qa,sa"},"code":0}},{"Code":"en","Name":{"ar":"الإنجليزية","en":"English","es":"Inglés","hi":null,"ru":"английский","de":"Englisch","pl":"Angielski","fr":"Anglais","si":"ඉංග්‍රීසි"},"AvailableAsNative":true,"AvailableAsTarget":true,"Language":{"name":{"en":{"Native":"English","Target":"English","TTS":"English","Value":"English"},"ar":{"Native":"الإنجليزية","Target":"","TTS":"الإنجليزية","x":"الإنجليزية","r":""},"es":{"Native":"Inglés","Target":"Inglés","TTS":"Inglés","Value":"Inglés"},"hi":null,"ru":{"Native":"английский","Target":"","TTS":"английский","x":"английский","r":""},"de":{"Native":"Englisch","Target":"Englisch","TTS":"Englisch","Value":"Englisch"},"pl":{"Native":"Angielski","Target":"Angielski","TTS":"Angielski","Value":"Angielski"},"fr":{"Native":"Anglais","Target":"Anglais","TTS":"Anglais","Value":"Anglais"},"si":{"Native":"ඉංග්‍රීසි","Target":"ඉංග්‍රීසි","TTS":"ඉංග්‍රීසි","Value":"ඉංග්‍රීසි"}},"flagPostFixCountries":null,"code":1}},{"Code":"es","Name":{"ar":"الأسبانية","en":"Spanish","es":"Español","hi":null,"ru":"испанский","de":"Spanisch","pl":"Hiszpański","fr":"Espagnol","si":"ස්පාඥ්ඥ"},"AvailableAsNative":true,"AvailableAsTarget":true,"Language":{"name":{"en":{"Native":"Spanish","Target":"Spanish","TTS":"Spanish","Value":"Spanish"},"ar":{"Native":"الأسبانية","Target":"","TTS":"الأسبانية","x":"الأسبانية","r":""},"es":{"Native":"Español","Target":"Español","TTS":"Español","Value":"Español"},"hi":null,"ru":{"Native":"испанский","Target":"","TTS":"испанский","x":"испанский","r":""},"de":{"Native":"Spanisch","Target":"Spanisch","TTS":"Spanisch","Value":"Spanisch"},"pl":{"Native":"Hiszpański","Target":"Hiszpański","TTS":"Hiszpański","Value":"Hiszpański"},"fr":{"Native":"Espagnol","Target":"Espagnol","TTS":"Espagnol","Value":"Espagnol"},"si":{"Native":"ස්පාඥ්ඥ","Target":"ස්පාඥ්ඥ","TTS":"ස්පාඥ්ඥ","Value":"ස්පාඥ්ඥ"}},"flagPostFixCountries":null,"code":2}},{"Code":"ru","Name":{"ar":"الروسية","en":"Russian","es":"Ruso","hi":null,"ru":"Русский","de":"Russisch","pl":"Rosyjski","fr":"Russe","si":"රුසියානු"},"AvailableAsNative":true,"AvailableAsTarget":true,"Language":{"name":{"en":{"Native":"Russian","Target":"Russian","TTS":"Russian","Value":"Russian"},"ar":{"Native":"الروسية","Target":"","TTS":"الروسية","x":"الروسية","r":""},"es":{"Native":"Ruso","Target":"Ruso","TTS":"Ruso","Value":"Ruso"},"hi":null,"ru":{"Native":"Русский","Target":"","TTS":"Русский","x":"Русский","r":""},"de":{"Native":"Russisch","Target":"Russisch","TTS":"Russisch","Value":"Russisch"},"pl":{"Native":"Rosyjski","Target":"Rosyjski","TTS":"Rosyjski","Value":"Rosyjski"},"fr":{"Native":"Russe","Target":"Russe","TTS":"Russe","Value":"Russe"},"si":{"Native":"රුසියානු","Target":"රුසියානු","TTS":"රුසියානු","Value":"රුසියානු"}},"flagPostFixCountries":null,"code":4}},{"Code":"de","Name":{"ar":"الألمانية","en":"German","es":"Alemán","hi":null,"ru":"немецкий","de":"Deutsch","pl":"Niemiecki","fr":"Allemand","si":"ජර්මන්"},"AvailableAsNative":true,"AvailableAsTarget":true,"Language":{"name":{"en":{"Native":"German","Target":"German","TTS":"German","Value":"German"},"ar":{"Native":"الألمانية","Target":"","TTS":"الألمانية","x":"الألمانية","r":""},"es":{"Native":"Alemán","Target":"Alemán","TTS":"Alemán","Value":"Alemán"},"hi":null,"ru":{"Native":"немецкий","Target":"","TTS":"немецкий","x":"немецкий","r":""},"de":{"Native":"Deutsch","Target":"Deutsch","TTS":"Deutsch","Value":"Deutsch"},"pl":{"Native":"Niemiecki","Target":"Niemiecki","TTS":"Niemiecki","Value":"Niemiecki"},"fr":{"Native":"Allemand","Target":"Allemand","TTS":"Allemand","Value":"Allemand"},"si":{"Native":"ජර්මන්","Target":"ජර්මන්","TTS":"ජර්මන්","Value":"ජර්මන්"}},"flagPostFixCountries":null,"code":5}},{"Code":"pl","Name":{"ar":"البولندية","en":"Polish","es":"Polaco","hi":null,"ru":"Польский","de":"Polnisch","pl":"Polski","fr":"Polonais","si":null},"AvailableAsNative":true,"AvailableAsTarget":false,"Language":{"name":{"en":{"Native":"Polish","Target":"Polish","TTS":"Polish","Value":"Polish"},"ar":{"Native":"البولندية","Target":"","TTS":"البولندية","x":"البولندية","r":""},"es":{"Native":"Polaco","Target":"Polaco","TTS":"Polaco","Value":"Polaco"},"hi":null,"ru":{"Native":"Польский","Target":"","TTS":"Польский","x":"Польский","r":""},"de":{"Native":"Polnisch","Target":"Polnisch","TTS":"Polnisch","Value":"Polnisch"},"pl":{"Native":"Polski","Target":"Polski","TTS":"Polski","Value":"Polski"},"fr":{"Native":"Polonais","Target":"Polonais","TTS":"Polonais","Value":"Polonais"},"si":null},"flagPostFixCountries":null,"code":6}},{"Code":"fr","Name":{"ar":"الفرنسية","en":"French","es":"Francés","hi":null,"ru":"Французский","de":"Französisch","pl":"Francuski","fr":"Français","si":"ප්‍රංශ"},"AvailableAsNative":true,"AvailableAsTarget":true,"Language":{"name":{"en":{"Native":"French","Target":"French","TTS":"French","Value":"French"},"ar":{"Native":"الفرنسية","Target":"","TTS":"الفرنسية","x":"الفرنسية","r":""},"es":{"Native":"Francés","Target":"Francés","TTS":"Francés","Value":"Francés"},"hi":null,"ru":{"Native":"Французский","Target":"","TTS":"Французский","x":"Французский","r":""},"de":{"Native":"Französisch","Target":"Französisch","TTS":"Französisch","Value":"Französisch"},"pl":{"Native":"Francuski","Target":"Francuski","TTS":"Francuski","Value":"Francuski"},"fr":{"Native":"Français","Target":"Français","TTS":"Français","Value":"Français"},"si":{"Native":"ප්‍රංශ","Target":"ප්‍රංශ","TTS":"ප්‍රංශ","Value":"ප්‍රංශ"}},"flagPostFixCountries":null,"code":7}},{"Code":"si","Name":{"ar":"سنهالية","en":"Sinhala","es":"Cingalés","hi":null,"ru":"Сингальский","de":"Singhalesische","pl":"Sinhala","fr":"Cingalais","si":"සිංහල"},"AvailableAsNative":false,"AvailableAsTarget":false,"Language":{"name":{"en":{"Native":"Sinhala","Target":"Sinhala","TTS":"Sinhala","Value":"Sinhala"},"ar":{"Native":"سنهالية","Target":"","TTS":"سنهالية","x":"سنهالية","r":""},"es":{"Native":"Cingalés","Target":"Cingalés","TTS":"Cingalés","Value":"Cingalés"},"hi":null,"ru":{"Native":"Сингальский","Target":"","TTS":"Сингальский","x":"Сингальский","r":""},"de":{"Native":"Singhalesische","Target":"Singhalesische","TTS":"Singhalesische","Value":"Singhalesische"},"pl":{"Native":"Sinhala","Target":"Sinhala","TTS":"Sinhala","Value":"Sinhala"},"fr":{"Native":"Cingalais","Target":"Cingalais","TTS":"Cingalais","Value":"Cingalais"},"si":{"Native":"සිංහල","Target":"සිංහල","TTS":"සිංහල","Value":"සිංහල"}},"flagPostFixCountries":null,"code":8}}];
+                
+                
+                iWantToLearnLocaleText = {"ar":"اختر اللغة التي ترغب بتعلمها","en":"Select the language you want to learn","es":"Seleccione qué idioma desea aprender","ru":"Укажите язык для изучения","de":"Wählen Sie die Sprache, die Sie lernen möchten","pl":"Wybierz język, którego chcesz się uczyć","fr":"Sélectionnez la langue que vous désirez apprendre","si":"ඔබට ඉගෙනීමට අවශ්‍ය භාෂාව තෝරන්න"};
+                
+                supporsHTML5 = true;
+                </script>
+            
+            <div class="container">
+                
+                <div class="container-steps">
+                    <div class="step selected">1</div>
+                    <div class="next"><img src="views/generic/bb2images/selectlangs/arrow_light.gif" width="32" height="22" /></div>
+                    <div class="step" id="nav_step_2">2</div>
+                    <div class="next"><img src="views/generic/bb2images/selectlangs/arrow_light.gif" width="32" height="22" /></div>
+                    <div class="finish"><img src="views/generic/bb2images/selectlangs/finish.png" width="42" height="21" /></div>
+                </div>
+                
+                <div class="container-blocks" style="height: 342px">
+                    
+                    <div id="nativeLangs" class="">
+                        
+                        
+                        <h2 dir='ltr'>
+                            Choose your speaking language:</h2>
+                        
+                        <h2 dir='rtl'>اختر لغتك الأصلية التي تتحدثها:</h2>
+                        
+                        
+                        <div class="list">
+                            
+                            <a href="javascript:setNativeLang('en')"
+                                class="a1 en"
+                                style=""
+                                >English</a>
+                            
+                            <a href="javascript:setNativeLang('ar')"
+                                class="a2 ar"
+                                style=""
+                                >العربية</a>
+                            
+                            <a href="javascript:setNativeLang('es')"
+                                class="a3 es"
+                                style=""
+                                >Español</a>
+                            
+                            <a href="javascript:setNativeLang('ru')"
+                                class="a4 ru"
+                                style=""
+                                >Русский</a>
+                            
+                            <a href="javascript:setNativeLang('fr')"
+                                class="a5 fr"
+                                style=""
+                                >Français</a>
+                            
+                            <a href="javascript:setNativeLang('de')"
+                                class="a6 de"
+                                style=""
+                                >Deutsch</a>
+                            
+                            <a href="javascript:setNativeLang('pl')"
+                                class="a7 pl"
+                                style=""
+                                >Polski</a>
+                            
+                        </div>
+                    </div>
+                    <div id="targetLangs" style="display: none">
+                        
+                        <h2 id="choose_target_title">Select the language you want to learn</h2>
+                        
+                        <div class="wrp">
+                            
+                            
+                            <a class="flags_btn" id="ar_target"
+                                href="javascript:setTargetLang('ar')">
+                                <img src="views/generic/bb2images/flags/60x35/ar-ae.gif"/><br/>
+                                <span id="ar_target_text">--Name--</span>
+                            </a>
+                            
+                            <a class="flags_btn" id="en_target"
+                                href="javascript:setTargetLang('en')">
+                                <img src="views/generic/bb2images/flags/60x35/en.gif"/><br/>
+                                <span id="en_target_text">--Name--</span>
+                            </a>
+                            
+                            <a class="flags_btn" id="es_target"
+                                href="javascript:setTargetLang('es')">
+                                <img src="views/generic/bb2images/flags/60x35/es.gif"/><br/>
+                                <span id="es_target_text">--Name--</span>
+                            </a>
+                            
+                            <a class="flags_btn" id="ru_target"
+                                href="javascript:setTargetLang('ru')">
+                                <img src="views/generic/bb2images/flags/60x35/ru.gif"/><br/>
+                                <span id="ru_target_text">--Name--</span>
+                            </a>
+                            
+                            <a class="flags_btn" id="de_target"
+                                href="javascript:setTargetLang('de')">
+                                <img src="views/generic/bb2images/flags/60x35/de.gif"/><br/>
+                                <span id="de_target_text">--Name--</span>
+                            </a>
+                            
+                            <a class="flags_btn" id="fr_target"
+                                href="javascript:setTargetLang('fr')">
+                                <img src="views/generic/bb2images/flags/60x35/fr.gif"/><br/>
+                                <span id="fr_target_text">--Name--</span>
+                            </a>
+                            
+                            
+                        </div>
+                        <div id="back_btn">
+                            <a href="javascript:backToChooseNativeLang()"><img src="views/generic/bb2images/selectlangs/back.gif" width="22" height="17" /></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <script type="text/javascript">
+                bbNav = function (dir) {
+                    var nativeLangsEl = $get("nativeLangs");
+                    var targetLangsEl = $get("targetLangs");
+                    var navStep2El = $get("nav_step_2");
+                    if (dir > 0) {
+                        $show(targetLangsEl);
+                        $addClass(navStep2El, "selected");
+                        $addClass(nativeLangsEl, "hide");
+                        if(supporsHTML5) {
+                            setTimeout(function () {
+                                       $addClass(targetLangsEl, "show");
+                                       }, 100);
+                            setTimeout(function () {
+                                       $hide(nativeLangsEl);
+                                       }, 1000); // animation timeout
+                        } else {
+                            $hide(nativeLangsEl);
+                        }
+                    } else {
+                        $show(nativeLangsEl);
+                        $removeClass(navStep2El, "selected");
+                        $removeClass(targetLangsEl, "show");
+                        if(supporsHTML5) {
+                            setTimeout(function () {
+                                       $removeClass(nativeLangsEl, "hide");
+                                       }, 100);
+                            setTimeout(function () {
+                                       $hide(targetLangsEl);
+                                       },  1000); // animation timeout
+                        } else {
+                            $hide(targetLangsEl);
+                        }
+                    }
+                };
+                
+                SELECTED_NATIVE_LANG = null;
+                
+                setNativeLang = function (code) {
+                    bbNav(1);
+                    
+                    SELECTED_NATIVE_LANG = code;
+                    
+                    $setInnerHtml("choose_target_title", iWantToLearnLocaleText[code]);
+                    for (var i = 0, length = langs.length; i < length; i++) {
+                        var lang = langs[i];
+                        if (!lang.AvailableAsTarget) continue;
+                        var langEl = $get(lang.Code + "_target");
+                        if (lang.Code == code) {
+                            $hide(langEl);
+                        } else {
+                            $show(langEl);
+                            $setInnerHtml(lang.Code + "_target_text", lang.Name[code]);
+                        }
+                    }
+                    
+                    if(window._gaq) {
+                        _gaq.push(['_trackEvent', 'FTLangSelV2', 'Native', code]);
+                    }
+                };
+                
+                setTargetLang = function (code) {
+                    if(window._gaq) {
+                        _gaq.push(['_trackEvent', 'FTLangSelV2', 'Target', code]);
+                    }
+                    user.native = SELECTED_NATIVE_LANG;
+                    user.target = code;
+                    amplify.store("user", user);
+                    window.location.href = "Home.html"; //"ChooseLearningLang.aspx?sid=5&learninglang=" + code + "&speakinglang=" + SELECTED_NATIVE_LANG;
+                };
+                
+                
+                backToChooseNativeLang = function () {
+                    bbNav(-1);
+                    _gaq.push(['_trackEvent', 'FTLangSelV2', 'BackToNative']);
+                };
+                
+                var _gaq = _gaq || [];
+                $attachEvent(window, 'load', function () {
+                             _gaq.push(['_trackEvent', 'FTLangSelV2', 'Visit']);
+                             });
+                </script>
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        <script type="text/javascript">
+            if (('ontouchstart' in document)) {
+                $addClass(document.body, 'touch');
+            }
+            </script>
+        
+        
+        
+        <script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-31203656-1']);
+            _gaq.push(['_setDomainName', 'babelbay.com']);
+            _gaq.push(['_trackPageview', '/ChooseLearningLang']);
+            
+            (function () {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+            
+            </script>
+        
+        
+    </body>
+</html>

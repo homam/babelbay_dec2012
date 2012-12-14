@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="scripts/lib/jQuery.js"></script>
+    <script src="scripts/lib/amplify.js"></script>
+    <script src="scripts/lib/_.js"></script>
+    <script src="scripts/lib/handlebars.js"></script>
+    <script src="scripts/lib/toucnwipe.js" defer="defer"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/common.js"></script>
+
+    <link href="views/generic/css/styles.less" rel="stylesheet/less" type="text/css" />
+    <link href="views/generic/css/browselevels.less" rel="stylesheet/less" type="text/css" />
+    <script src="scripts/lib/less.js"></script>
+
+
+
+    <title>Babelbay</title>
+    <meta name="viewport" content="width=320" />
+    <script>
+        $(function () {
+            templateThisPage([function () {
+                var d = $.Deferred();
+                $.ajax('res//data//langs.json').done(function (langs) {
+                    langs = parseJSON(langs);
+                    var native = langs.filter(function (l) { return user.native == l.Code })[0];
+                    var target = langs.filter(function (l) { return user.target == l.Code })[0];
+                    
+                    var flag = function (lang) {
+                        var c = lang.Language.flagPostFixCountries;
+                        return (!!c ?
+                            (lang.Code + "-" + c.codes.split(',')[0]) : lang.Code);
+                    };
+
+                    d.resolve({
+                        native: {
+                            flag: flag(native),
+                            name: native.Language.name[user.native]
+                        },
+                        target: {
+                            flag: flag(target),
+                            name: target.Language.name[user.native]
+                        },
+                        averageScore: (function () {
+                            var average = function (arr) {
+                                return _.reduce(arr,
+                                    function (a, b) { return a + b; }, 0) / arr.length;
+                            };
+                            return Math.round(
+                            average(_.map(user.levelsHistory, function (i) {
+                                return average(i.scores)
+                            })) * 100);
+                        })()
+                    });
+                });
+                return d;
+            }]);
+        });
+    </script>
+</head>
+<body class="profilePage">
+    <div id="sc_u"></div>
+    <div class="page" id="profilePage">
+
+        <div class="page-title">{{website.Profile_Title}}</div>
+        <div class="container" id="profileView">
+             <table border="0" cellspacing="0" cellpadding="0" id="tform">
+                <tr>
+                    <td width="50%">
+                        {{website.Profile_ISpeak}}:
+                    </td>
+                    <td width="50%">
+                        <a href="ChooseLang.html#?choose=true"> <!--<a href="javascript:myProfile.setState('chooneLang_native')">-->
+                        <img src="/views/generic/bb2images/flags/{{native.flag}}.gif"
+                            valign="middle" alt="" width="22" height="16" class="flags" />
+                        » {{native.name.Native}} «
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        {{website.Profile_IAmLearning}}:
+                    </td>
+                    <td width="50%">
+                        <a href="ChooseLang.html#?choose=true"> 
+                        <img src="/views/generic/bb2images/flags/{{target.flag}}.gif"
+                            valign="middle" alt="" width="22" height="16" class="flags" />
+                        » {{target.name.Target}} «
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{website.Profile_MyLevel}}:
+                    </td>
+                    <td>
+                        {{user.level}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       {{website.Profile_AverageScore}}:
+                    </td>
+                    <td>
+                        {{averageScore}} %
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="appmenu_navs" class="appmenu_navs"></div>
+     </div>
+
+
+</body>
+</html>

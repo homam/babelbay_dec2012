@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="scripts/lib/jQuery.js"></script>
+    <script src="scripts/lib/amplify.js"></script>
+    <script src="scripts/lib/_.js"></script>
+    <script src="scripts/lib/handlebars.js"></script>
+    <script src="scripts/lib/toucnwipe.js" defer="defer"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/common.js"></script>
+
+    <link href="views/generic/css/styles.less" rel="stylesheet/less" type="text/css" />
+    <link href="views/generic/css/browselevels.less" rel="stylesheet/less" type="text/css" />
+    <script src="scripts/lib/less.js"></script>
+
+
+
+    <title>Babelbay</title>
+    <meta name="viewport" content="width=320" />
+    <script>
+        $(function () {
+            templateThisPage([function () {
+                var d = $.Deferred();
+                $.ajax('res//data//levels.json').done(function (levels) {
+                    var enabledLevels = _.keys(user.levelsHistory)
+                        .map(function (i) { return parseInt(i); }).concat([user.level]);
+                    levels = parseJSON(levels);
+                    levels = _.head(levels, 10);
+                    levels = _.map(levels, function (level) {
+                        var displayTextTemplate = Handlebars.compile(pageContext.website.Level);
+                        return {
+                            name: level.name[user.native].Native,
+                            number: level.number,
+                            displayText: function () {
+                                return displayTextTemplate(this) + " - " + this.name;
+                            },
+                            enabled: function() {
+                                var number = this.number;
+                                return 1*(!!_.any(enabledLevels, function (i) {return number == i; }));
+                            },
+                            className: function () {
+                              return this.enabled() ?  "" : "na"
+                            }
+                        };
+                    });
+                    d.resolve({ levels: levels });
+                });
+                return d;
+            }]);
+        });
+    
+        var getLevelElements = function (level) {
+            return {
+                info: $get('levelinfo_' + level),
+                arrow: $get('levelarrow_' + level)
+            };
+        };
+
+        var currentExpandedLevel = 0;
+        showLevelInfo = function (level, enabled) {
+            if (!enabled) return;
+            var elements = getLevelElements(level);
+            if (currentExpandedLevel) {
+                var xelement = getLevelElements(currentExpandedLevel);
+                $hide(xelement.info);
+                $setAttr(xelement.arrow, 'src', 'views/generic/bb2images/browselevels/arrow-side.png');
+                if (elements.info == xelement.info) {
+                    currentExpandedLevel = 0;
+                    return;
+                }
+            }
+            currentExpandedLevel = level;
+            $show(elements.info, true);
+            $setAttr(elements.arrow, 'src', 'views/generic/bb2images/browselevels/arrow-down.png');
+        };
+    </script>
+
+</head>
+<body class="browseLevels">
+    <div id="sc_u"></div>
+    <div class="page" id="browseLevels">
+
+        <div class="page-title">{{website.Levels_Completed}}</div>
+        <div class="container">
+
+
+            {{#each levels}}
+            <a class="button {{className}}" href="javascript:showLevelInfo({{number}},{{enabled}})">{{displayText}}
+                <img id="levelarrow_{{number}}" src="views/generic/bb2images/browselevels/arrow-side.png"
+                    alt="" />
+            </a>
+            <div class="submenu" id="levelinfo_{{number}}">
+                <div class="submenuarrow">
+                </div>
+                <div class="submenubox">
+                    <a class="broccolig" href="level.html#?level={{number}}">{{../website.BrowseLevels_Review_The_Course}}</a>
+                    <a class="broccolig" href="Level.html#?level={{number}}&testsonly=true">{{../website.Browse_Levels_TakeTheTestAgain}}</a>
+                    <p>Last score:<span>87 %</span></p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div id="appmenu_navs" class="appmenu_navs"></div>
+    </div>
+</body>
+</html>

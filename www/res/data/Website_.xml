@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<website>
+  <texts>
+
+    <MyWords_WordAdded>
+      <en>This word is added to your personal dictionary.</en>
+      <ar>تم اضافة هذه الكلمة الى قاموسك الشخصي.</ar>
+      <pl>To słowo dodano do Twojego słownika osobistego.</pl>
+      <de>Das Wort wurde Ihrem persönlichen Wörterbuch hinzugefügt.</de>
+      <es>Esta palabra se ha añadido a su diccionario personal.</es>
+      <ru>Данное слово добавлено в ваш личный словарь.</ru>
+      <fr>Ce mot a été ajouté à votre dictionnaire personnel.</fr>
+      <si>මෙම වචනය ඔබේ පුද්ගලික ශබ්ද කෝෂයට ඇතුල් කරන ලදි.</si>
+    </MyWords_WordAdded>
+    
+    <LessonPage_SelectTargetLang>
+      <en>Select the language you want to learn</en>
+      <ar>اختر اللغة التي ترغب بتعلمها</ar>
+      <pl>Wybierz język, którego chcesz się nauczyć</pl>
+      <de>Wählen Sie die Sprache, die Sie lernen möchten</de>
+      <es>Seleccione el idioma que quiere aprender</es>
+      <ru>Выберите язык, который хотите изучить</ru>
+      <fr>Sélectionnez la langue que vous désirez apprendre</fr>
+      <si>ඔබට ඉගෙන ගැනීමට අවශ්‍ය භාෂාව තෝරන්න</si>
+    </LessonPage_SelectTargetLang>
+    
+    <Start>
+      <en>Start!</en>
+      <ar>ابدأ!</ar>
+      <de>Start!</de>
+      <es>Inicio!</es>
+      <ru>Старт!</ru>
+      <fr>Démarrer</fr>
+      <pl>Start!</pl>
+      <si>ආරම්භ කරන්න</si>
+    </Start>
+
+    <Word_OfThe_Day>
+      <en>Word of the Day</en>
+      <ar>كلمة اليوم</ar>
+      <de>Worte des Tages</de>
+      <pl>Słowo dnia</pl>
+      <es>Palabra del día</es>
+      <ru>Слово дня</ru>
+      <fr>Mot du jour</fr>
+      <si>දවසේ වචන</si>
+    </Word_OfThe_Day>
+
+    <MyWords_IsEmpty>
+      <en>
+        <![CDATA[
+          No word has been added yet.
+          <p>
+            <a href="{0}">Start learning now!</a>
+          </p>
+        ]]>
+      </en>
+      <ar>
+        <![CDATA[
+          لم يتم اضافة اي كلمة للأن
+          <p>
+            <a href="{0}">ابدأ التعلّم الأن</a>
+          </p>
+        ]]>
+      </ar>
+      <de>
+        <![CDATA[
+          Es wurden keine Wörter hinzugefügt.
+          <p>
+            <a href="{0}">Jetzt mit dem Lernen anfangen!</a>
+          </p>
+        ]]>
+      </de>
+      <pl>
+        <![CDATA[
+          Nie dodano jeszcze żadnego wyrazu.
+          <p>
+            <a href="{0}">Zacznij się uczyć!</a>
+          </p>
+        ]]>
+      </pl>
+      <ru>
+        <![CDATA[
+          Добавленные слова отсутствуют.
+          <p>
+            <a href="{0}">Начните изучение сейчас!</a>
+          </p>
+        ]]>
+      </ru>
+      <fr>
+        <![CDATA[
+          Aucun mot n’a encore été ajouté.
+          <p>
+            <a href="{0}">Commencez à apprendre maintenant!</a>
+          </p>
+        ]]>
+      </fr>
+      <es>
+        <![CDATA[
+          Aún no se ha añadido ninguna palabra.
+          <p>
+            <a href="{0}">¡Comienza a aprender ahora!</a>
+          </p>
+        ]]>
+      </es>
+      <si>
+        <![CDATA[
+          තවමත් වචන එකතු කර නැත.
+          <p>
+            <a href="{0}">ඉගෙනීම දැන් අරඹන්න!</a>
+          </p>
+        ]]>
+      </si>
+    </MyWords_IsEmpty>
+
+    <Back_Button>
+      <en>Back</en>
+      <ar>العودة</ar>
+      <de>Zurück</de>
+      <pl>Wstecz</pl>
+      <es>Atrás</es>
+      <ru>Назад</ru>
+      <fr>Retour</fr>
+      <si>ආපසු</si>
+    </Back_Button>
+    
+
+    <Pages_DefaultTitle>
+      <en>Babelbay</en>
+      <ar>Babelbay</ar>
+      <de>Babelbay</de>
+      <pl>Babelbay</pl>
+      <es>Babelbay</es>
+      <ru>Babelbay</ru>
+      <fr>Babelbay</fr>
+      <si>Babelbay</si>
+    </Pages_DefaultTitle>
+
+    <!-- footer nav -->
+    <Home>
+      <en>Home</en>
+      <ar>الصفحة الرئيسية</ar>
+      <de>Startseite</de>
+      <pl>Strona domowa</pl>
+      <es>Inicio</es>
+      <ru>Главная</ru>
+      <fr>Accueil</fr>
+      <si>මුල් පිටුව</si>
+    </Home>
+    
+    <!-- / footer nav -->
+    
+    <!-- home -->
+
+    <Level>
+      <en>Level {0}</en>
+      <ar>المرحلة {0}</ar>
+      <de>Ebene {0}</de>
+      <pl>Poziom {0}</pl>
+      <es>Nivel {0}</es>
+      <ru>уровень {0}</ru>
+      <fr>Niveau {0}</fr>
+      <si>{0} මට්ටම</si>
+     </Level>
+  
+    <Home_ContinueLevel>
+      <en>Continue Level {0}</en>
+      <ar>أكمل المرحلة {0}</ar>
+      <de>Mit Level {0} fortfahren</de>
+      <pl>Kontynuuj - poziom {0}</pl>
+      <es>Continuar el nivel {0}</es>
+      <ru>Продолжить Уровень {0}</ru>
+      <fr>Continuer le niveau {0}</fr>
+      <si>{0} මට්ටම වෙත යන්න</si>
+    </Home_ContinueLevel>
+    <Home_LevelTests>
+      <en>Test Yourself</en>
+      <ar>اختبر نفسك</ar>
+      <de>Testen Sie sich selbst</de>
+      <pl>Sprawdź się!</pl>
+      <es>Examínese a sí mismo</es>
+      <ru>Испытайте себя</ru>
+      <fr>Testez-vous</fr>
+      <si>ඔබව පරීක්ෂා කර ගන්න</si>
+    </Home_LevelTests>
+    
+    <Home_Welcome_Message>
+      <en>
+        Welcome to Babelbay!
+      </en>
+      <ar>
+        مرحبا بكم في Babelbay
+      </ar>
+      <de>Willkommen bei Babelbay!</de>
+      <pl>Witamy w Babelbay!</pl>
+      <es>¡Bienvenido a Babelbay!</es>
+      <ru>Добро пожаловать в Babelbay!</ru>
+      <fr>Bienvenue sur Babelbay!</fr>
+      <si>Babelbay වෙත පිළිගනිමු!</si>
+    </Home_Welcome_Message>
+
+    <Home_LanguageCourseTitle>
+      <en>{0} Language Course</en>
+      <ar>الدورة {0}</ar>
+      <de>{0}-Sprachkurs</de>
+      <pl>Kurs języka {0}</pl>
+      <es>Curso de {0}</es>
+      <ru>Курс {0} языка</ru>
+      <fr>Cours d’{0}</fr>
+      <si>{0} භාෂා පාඨමාලාව</si>
+    </Home_LanguageCourseTitle>
+
+    <Profile_Title>
+      <en>My Profile</en>
+      <ar>ملفي</ar>
+      <de>Mein Profil</de>
+      <pl>Mój profil</pl>
+      <es>Mi perfil</es>
+      <ru>Мой профиль</ru>
+      <fr>Mon profil</fr>
+      <si>මගේ පැතිකඩ</si>
+    </Profile_Title>
+    
+    <Translator_Title>
+      <en>Translator</en>
+      <ar>مترجم</ar>
+      <de>Übersetzer</de>
+      <pl>Tłumacz</pl>
+      <es>Traductor</es>
+      <ru>Переводчик</ru>
+      <fr>Traducteur</fr>
+      <si>භාෂා පරිවර්තක</si>
+    </Translator_Title>
+    
+    <Support_Title>
+      <en>About</en>
+      <ar>عن الخدمة</ar>
+      <de>Über uns</de>
+      <pl>O nas</pl>
+      <es>Acerca de</es>
+      <ru>О нас</ru>
+      <fr>À propos de</fr>
+      <si>පිළිබඳ</si>
+    </Support_Title>
+    
+    <!-- /home -->
+    
+    <!-- steps -->
+
+    <Step_MissingWordTest_Title>
+      <en>Choose the correct word to fill the gap</en>
+      <ar>اختر الكلمة الصحيحة لتعبئة الفراغ</ar>
+      <de>Bitte wählen Sie das richtige Wort, um die Lücke auszufüllen</de>
+      <pl>Wpisz w luki odpowiednie słowo</pl>
+      <es>Seleccione la palabra correcta para rellenar el espacio en     blanco</es>
+      <ru>Подставьте правильное слово</ru>
+      <fr>Choisissez le bon mot pour remplir le blanc</fr>
+      <si>හිස්තැන පිරවීමට නිවැරදි වචනය තෝරන්න</si>
+    </Step_MissingWordTest_Title>
+    
+    <!-- /steps -->
+    
+    <!-- step (least step) -->
+
+    <Level_Completed>
+      <en><![CDATA[Level {0} Completed]]></en>
+      <ar><![CDATA[إكتمل المستوى {0}]]></ar>
+      <de><![CDATA[Level {0} abgeschlossen]]></de>
+      <pl><![CDATA[Poziom {0} ukończony]]></pl>
+      <es><![CDATA[Completado el nivel {0}]]></es>
+      <ru><![CDATA[Уровень {0} завершен]]></ru>
+      <fr><![CDATA[Niveau {0} terminé]]></fr>
+      <si><![CDATA[{0} මට්ටම සම්පූර්ණ කර ඇත]]></si>
+    </Level_Completed>
+    
+    <Level_Completed_YourScore>
+      <en>Your Score:</en>
+      <ar>النتيجة:</ar>
+      <de>Ihre Punktzahl:</de>
+      <pl>Twój wynik:</pl>
+      <es>Sus puntuaciones:</es>
+      <ru>Ваш результат:</ru>
+      <fr>Vos scores:</fr>
+      <si>ඔබේ ලකුණු:</si>
+    </Level_Completed_YourScore>
+    
+    <LevelCompleted_PracticeMore>
+      <en>Practice More in Level {0}</en>
+      <ar>تدرب أكثر في المستوى {0}</ar>
+      <de>Üben Sie weiter in Level {0}</de>
+      <pl>Ćwicz dalej na poziomie {0}</pl>
+      <es>Practicar más en el nivel {0}</es>
+      <ru>Продолжить тренировку на Уровне {0}</ru>
+      <fr>Entraînez-vous encore au niveau {0}</fr>
+      <si>{0} වන මට්මමේ තවත් පුරුදු වන්න</si>
+    </LevelCompleted_PracticeMore>
+    
+    <LevelCompleted_StartNextLevel_Label>
+      <en><![CDATA[Start Level {0}]]></en>
+      <ar><![CDATA[بدء المستوى {0}]]></ar>
+      <de><![CDATA[Level {0} beginnen]]></de>
+      <pl><![CDATA[Zacznij poziom {0}]]></pl>
+      <es><![CDATA[Comenzar el nivel {0}]]></es>
+      <ru><![CDATA[Начать Уровень {0}]]></ru>
+      <fr><![CDATA[Commencez le niveau {0}]]></fr>
+      <si><![CDATA[{0} මට්ටම ආරම්භ කරන්න]]></si>
+    </LevelCompleted_StartNextLevel_Label>
+
+    <!-- /step (last step) -->
+    
+    <!-- profile -->
+
+    <FirstTime_ChooseYourSpeakingLang>
+      <en>Choose your speaking language</en>
+      <ar>اختر لغتك الأصلية التي تتحدثها</ar>
+      <de>Wählen Sie Ihre Ausgangssprache</de>
+      <pl>Wybierz swój język mówiony</pl>
+      <es>Seleccione el idioma que habla</es>
+      <ru>Выберите язык</ru>
+      <fr>Sélectionnez la langue que vous parlez</fr>
+      <si>ඔබ කතා කරන භාෂාව තෝරන්න</si>
+    </FirstTime_ChooseYourSpeakingLang>
+
+    <FirstTime_ChooseYourLearningLang>
+      <en>Select the language you want to learn</en>
+      <ar>اختر اللغة التي ترغب بتعلمها</ar>
+      <de>Wählen Sie die Sprache, die Sie lernen möchten</de>
+      <pl>Wybierz język, którego chcesz się uczyć</pl>
+      <es>Seleccione qué idioma desea aprender</es>
+      <ru>Укажите язык для изучения</ru>
+      <fr>Sélectionnez la langue que vous désirez apprendre</fr>
+      <si>ඔබට ඉගෙනීමට අවශ්‍ය භාෂාව තෝරන්න</si>
+    </FirstTime_ChooseYourLearningLang>
+
+    <Profile_AvailableLevelCredits>
+      <en>Level Credits</en>
+      <ar>رصيد المرحلة</ar>
+      <de>Level-Guthaben</de>
+      <pl>Kredyty poziomu</pl>
+      <es>Créditos por nivel</es>
+      <ru>Кредиты за уровень</ru>
+      <fr>Crédits de niveau</fr>
+      <si>මට්මමේ ක්‍රෙඩිට්</si>
+    </Profile_AvailableLevelCredits>
+    
+    <Profile_ISpeak>
+      <en>I speak</en>
+      <ar>أنا أتكلم</ar>
+      <de>Ich spreche</de>
+      <pl>Mówię</pl>
+      <es>Yo hablo</es>
+      <ru>Я говорю</ru>
+      <fr>Je parle</fr>
+      <si>මම කතා කරමි</si>
+    </Profile_ISpeak>
+    
+    <Profile_IWantToLearn>
+      <en>I want to learn</en>
+      <ar>أنا أتعلم</ar>
+      <de>Ich lerne</de>
+      <pl>Uczę się</pl>
+      <es>Yo estoy aprendiendo</es>
+      <ru>Я хочу учить</ru>
+      <fr>Je veux apprendre</fr>
+      <si>මට ඉගෙනීමට අවශ්‍ය</si>
+    </Profile_IWantToLearn>
+    
+    <Profile_IAmLearning>
+      <en>I am learning</en>
+      <ar>أنا أتعلم</ar>
+      <de>Ich lerne</de>
+      <pl>Uczę się</pl>
+      <es>Yo estoy aprendiendo</es>
+      <ru>Я изучаю</ru>
+      <fr>J’apprends</fr>
+      <si>මම ඉගෙන ගනිමි</si>
+    </Profile_IAmLearning>
+    
+    <Profile_MyLevel>
+      <en>My Level</en>
+      <ar>مستواي</ar>
+      <de>Mein Level</de>
+      <pl>Mój poziom</pl>
+      <es>Mi nivel</es>
+      <ru>Мой Уровень</ru>
+      <fr>Mon niveau</fr>
+      <si>මගේ මට්ටම</si>
+    </Profile_MyLevel>
+    
+    <Profile_AverageScore>
+      <en>Average Score</en>
+      <ar>متوسط الدرجات</ar>
+      <de>Durchschnittliche Punktzahl</de>
+      <pl>Średni wynik</pl>
+      <es>Puntuación media</es>
+      <ru>Средний результат</ru>
+      <fr>Score moyen</fr>
+      <si>සාමාන්‍ය ලකුණු</si>
+    </Profile_AverageScore>
+    
+    <Profile_MyNickname>
+      <en>My Nickname</en>
+      <ar>اسمي المستعار</ar>
+      <de>Mein Benutzername</de>
+      <pl>Mój przydomek</pl>
+      <es>Mi apodo</es>
+      <ru>Мой псевдоним</ru>
+      <fr>Mon surnom</fr>
+      <si>මගේ සුරතල් නාමය</si>
+    </Profile_MyNickname>
+    
+    <Profile_Edit>
+      <en>Edit</en>
+      <ar>تعديل</ar>
+      <de>Bearbeiten</de>
+      <pl>Edytuj</pl>
+      <es>Editar</es>
+      <ru>Изменить</ru>
+      <fr>Éditer</fr>
+      <si>වෙනස් කරන්න</si>
+    </Profile_Edit>
+    
+    <Profile_Save>
+      <en>Save</en>
+      <ar>احفظ</ar>
+      <de>Speichern</de>
+      <pl>Zapisz</pl>
+      <es>Guardar</es>
+      <ru>Сохранить</ru>
+      <fr>Sauvegarder</fr>
+      <si>සුරකින්න</si>
+    </Profile_Save>
+    
+    
+    <!-- /profile -->
+    
+    <!-- translator -->
+
+    <Translator_Headline>
+      <en>Type the text to translate</en>
+      <ar>اكتب النص للترجمة</ar>
+      <de>Bitte geben Sie den zu übersetzenden Text ein</de>
+      <pl>Wpisz tekst do tłumaczenia</pl>
+      <es>Escriba el texto que desea traducir</es>
+      <ru>Введите текст для перевода</ru>
+      <fr>Entrez le texte à traduire</fr>
+      <si>පරිවර්තනය කිරීමට වදන් ටයිප් කරන්න</si>
+    </Translator_Headline>
+    
+    <Translator_AudoDetect_Label>
+      <en>Detect language</en>
+      <ar>كشف اللغة</ar>
+      <de>Sprache erkennen</de>
+      <pl>Rozpoznaj język</pl>
+      <es>Detectar el idioma</es>
+      <ru>Определить язык</ru>
+      <fr>Détecter la langue</fr>
+      <si>භාෂාව සොයන්න</si>
+    </Translator_AudoDetect_Label>
+    
+    <Translator_Translate>
+      <en>Translate</en>
+      <ar>ترجم</ar>
+      <de>Übersetzen</de>
+      <pl>Tłumacz</pl>
+      <es>Traducir</es>
+      <ru>Перевести</ru>
+      <fr>Traduire</fr>
+      <si>පරිවර්තනය කරන්න</si>
+    </Translator_Translate>
+    
+    <Translator_SelectALang>
+      <en>Select a language</en>
+      <ar>اختيار لغة</ar>
+      <de>Bitte wählen Sie eine Sprache</de>
+      <pl>Wybierz język</pl>
+      <es>Seleccionar idioma</es>
+      <ru>Укажите язык</ru>
+      <fr>Sélectionner une langue</fr>
+      <si>භාෂාවක් තෝරන්න</si>
+    </Translator_SelectALang>
+    
+    <!-- / translator -->
+    
+    <!-- support -->
+
+    <ConactUs_Title>
+      <en>Contact Us</en>
+      <ar>إتصل بنا</ar>
+      <de>Kontaktieren Sie uns</de>
+      <pl>Kontakt</pl>
+      <es>Contáctenos</es>
+      <ru>Контакты</ru>
+      <fr>Nous contacter</fr>
+      <si>අප අමතන්න</si>
+    </ConactUs_Title>
+    
+    <TermsAndConditions_Title>
+      <en>Terms &amp; Conditions</en>
+      <ar>شروط و أحكام</ar>
+      <de>Geschäftsbedingungen</de>
+      <pl>Zasady i warunki</pl>
+      <es>Términos y Condiciones</es>
+      <ru>Положения &amp; условия</ru>
+      <fr>Conditions générales</fr>
+      <si>නියමයන් සහ කොන්දේසි</si>
+    </TermsAndConditions_Title>
+    
+    <!-- /support -->
+    
+    <!-- support contact us -->
+
+    <ContactUs_Email>
+      <en>Email</en>
+      <ar>البريد الإلكتروني</ar>
+      <de>Email</de>
+      <pl>Email</pl>
+      <es>Correo electrónico</es>
+      <ru>Электронная почта</ru>
+      <fr>Courriel</fr>
+      <si>ඊමේල්</si>
+    </ContactUs_Email>
+    
+    <ContactUs_FirstName>
+      <en>First Name</en>
+      <ar>الاسم الأول</ar>
+      <de>Vorname</de>
+      <pl>Imię</pl>
+      <es>Nombre</es>
+      <ru>Имя</ru>
+      <fr>Prénom</fr>
+      <si>මුල් නම</si>
+    </ContactUs_FirstName>
+    
+    <ContactUs_LastName>
+      <en>Last Name</en>
+      <ar>اسم العائلة</ar>
+      <de>Nachname</de>
+      <pl>Nazwisko</pl>
+      <es>Apellido(s)</es>
+      <ru>Фамилия</ru>
+      <fr>Nom</fr>
+      <si>අවසන් නම</si>
+    </ContactUs_LastName>
+    
+    <ContactUs_Mobile>
+      <en>Mobile Phone</en>
+      <ar>رقم الهاتف الجوال</ar>
+      <de>Handynummer</de>
+      <pl>Nr tel. komórkowego</pl>
+      <es>Teléfono móvil</es>
+      <ru>Мобильный телефон</ru>
+      <fr>Numéro de portable</fr>
+      <si>ජංගම දුරකථනය</si>
+    </ContactUs_Mobile>
+    
+    <ContactUs_Message>
+      <en>Message</en>
+      <ar>أدخل سؤالك</ar>
+      <de>Nachricht</de>
+      <pl>Wiadomość</pl>
+      <es>Mensaje</es>
+      <ru>Сообщение</ru>
+      <fr>Message</fr>
+      <si>පණිවුඩය</si>
+    </ContactUs_Message>
+    
+    <ContactUs_Send>
+      <en>Submit</en>
+      <ar>أدخل</ar>
+      <de>Absenden</de>
+      <pl>Wyślij</pl>
+      <es>Enviar</es>
+      <ru>Отправить</ru>
+      <fr>Soumettre</fr>
+      <si>ඉදිරිපත් කරන්න</si>
+    </ContactUs_Send>
+    
+    <ContactUs_MandatoryFieldsErr>
+      <en>All fields are mandatory.</en>
+      <ar>جميع الحقول مطلوبة</ar>
+      <de>Alle Felder sind verpflichtend.</de>
+      <pl>Wszystkie pola są obowiązkowe.</pl>
+      <es>Son obligatorios todos los campos </es>
+      <ru>Все поля обязательны к заполнению.</ru>
+      <fr>Tous les champs sont obligatoires.</fr>
+      <si>සියලු ක්ෂේත්‍ර අනිවාර්යය</si>
+    </ContactUs_MandatoryFieldsErr>
+    
+    <ContactUs_MessageSent>
+      <en>Your enquiry has been sent, thank you!</en>
+      <ar>شكرا لك, سنرد على طلبك بعد قليل.</ar>
+      <de>Ihre Anfrage wurde übermittelt. Vielen Dank!</de>
+      <pl>Twoje pytanie zostało wysłane. dziękuję!</pl>
+      <es>Se ha enviado su pregunta. ¡gracias!</es>
+      <ru>Ваш запрос отправлен</ru>
+      <fr>Votre demande a été envoyée. Merci!</fr>
+      <si>ස්තූතියි .ඔබේ විමසුම යවා ඇත</si>
+    </ContactUs_MessageSent>
+    
+    <ContactUs_Text>
+      <en>Should you require further assistance please complete the enquiry form below</en>
+      <ar>اذا احتجت المزيد من المساعدة يرجى ملء نموذج الاستفسار أدناه</ar>
+      <de>Bitte füllen das folgende Kontaktformular aus, falls Sie weitere Hilfe benötigen</de>
+      <pl>W razie pytań, proszę uzupełnić poniższy formularz</pl>
+      <es>Si necesitase más ayuda, complete, por favor, el formulario de preguntas al pie.</es>
+      <ru>В случае необходимости в помощи заполните форму запроса ниже</ru>
+      <fr>Si vous avez besoin d’une assistance supplémentaire, veuillez remplir le formulaire de demande ci-dessous</fr>
+      <si>ඔබට වැඩිදුර සහාය අවශ්‍ය නම් පහත විමසුම් ආකෘතිය පුරවන්න</si>
+    </ContactUs_Text>
+    
+    <ContactUs_TheseFieldsAreMandatory>
+      <en>* These fields are mandatory.</en>
+      <ar>* هذه الخانات اجباريّة</ar>
+      <de>* Diese Angaben sind verpflichtend.</de>
+      <pl>* Te pola są obowiązkowe.</pl>
+      <es>* Estos campos son obligatorios.</es>
+      <ru>* Данные поля обязательны к заполнению.</ru>
+      <fr>* Ces champs sont obligatoires.</fr>
+      <si>* මෙම ක්ෂේත්‍ර අවශ්‍යය.</si>
+    </ContactUs_TheseFieldsAreMandatory>
+    
+    <!-- / support contact us-->
+    
+    <!-- support faq -->
+
+    <FAQ_Unsub_Confirm>
+      <en>Are you sure you want to unsubscribe?</en>
+      <ar>هل أنت متأكد أنك تريد الغاء اشتراكك؟</ar>
+      <de>Sind Sie sicher, dass Sie sich abmelden möchten?</de>
+      <pl>Czy na pewno chcesz zrezygnować z subskrypcji?</pl>
+      <es>¿Está seguro de que quiere darse de baja?</es>
+      <ru>Вы уверены, что хотите отписаться?</ru>
+      <fr>Êtes-vous sûr de vouloir annuler votre inscription ?</fr>
+      <si>ඔබට දායකත්වයෙන් ඉවත් වීමට අවශ්‍ය බව විශ්වාසද?</si>
+    </FAQ_Unsub_Confirm>
+    <Yes>
+      <en>Yes</en>
+      <ar>نعم</ar>
+      <de>Ja</de>
+      <pl>Tak</pl>
+      <es>Sí</es>
+      <ru>Да</ru>
+      <fr>Oui</fr>
+      <si>ඔව්</si>
+    </Yes>
+    <No>
+      <en>No</en>
+      <ar>لا</ar>
+      <de>Nein</de>
+      <pl>Nie</pl>
+      <es>No</es>
+      <ru>Нет</ru>
+      <fr>Non</fr>
+      <si>නැත</si>
+    </No>
+    <FAQ_Title>
+      <en>FAQ</en>
+      <ar>أسئلة وأجوبة</ar>
+      <de>FAQ</de>
+      <pl>FAQ</pl>
+      <es>Preguntas frecuentes</es>
+      <ru>ЧАВО</ru>
+      <fr>FAQ</fr>
+      <si>නිතර අසන ප්‍රශ්න</si>
+    </FAQ_Title>
+    <FAQ_LongTitle>
+      <en>Frequently Asked Questions</en>
+      <ar>أسئلة وأجوبة</ar>
+      <de>Häufig gestellte Fragen (FAQ)</de>
+      <pl>Najczęściej Zadawane Pytania</pl>
+      <es>Preguntas frecuentes</es>
+      <ru>Часто задаваемые вопросы</ru>
+      <fr>Foire aux questions</fr>
+      <si>නිතර අසන ප්‍රශ්න</si>
+    </FAQ_LongTitle>
+
+    
+    <!-- / support faq-->
+    
+    <!-- level -->
+
+    <Lesson_NotEnoughCredits>
+      <en>You don't have enough credits to start the next level now</en>
+      <ar>ليس لديك الرصيد الكافي</ar>
+      <de>Ihr Guthaben reicht nicht aus, um den nächsten Level jetzt zu beginnen</de>
+      <pl>Nie masz wystarczająco kredytów, aby zacząć następny kurs</pl>
+      <es>En este momento, no dispone de suficientes créditos para pasar al siguiente nivel</es>
+      <ru>У вас недостаточно кредитов, чтобы начать следующий уровень</ru>
+      <fr>Vous n’avez pas encore assez de crédits pour débuter le niveau suivant</fr>
+      <si>ඊළඟ මට්ටම දැන් ආරම්භ කිරීමට දැන් ඔබට ක්‍රෙඩිට් නැත</si>
+    </Lesson_NotEnoughCredits>
+    
+    <!-- / level -->
+    
+    <!-- my words -->
+
+    <MyWords_Title>
+      <en>My Words</en>
+      <ar>كلماتي</ar>
+      <de>Meine Worte</de>
+      <pl>Moje słowa</pl>
+      <es>Mis palabras</es>
+      <ru>Мои слова</ru>
+      <fr>Mes mots</fr>
+      <si>මගේ වචන</si>
+    </MyWords_Title>
+    
+    <!-- /my words-->
+    
+    <en>
+      <en>English</en>
+      <ar>الإنجليزية</ar>
+      <de>Englisch</de>
+      <pl>Angielski</pl>
+      <es>Inglés</es>
+      <ru>Английский</ru>
+      <fr>Anglais</fr>
+      <si>ඉංග්‍රීසි</si>
+    </en>
+    <fr>
+      <en>French</en>
+      <ar>الفرنسية</ar>
+      <de>Französisch</de>
+      <pl>Francuski</pl>
+      <es>Francés</es>
+      <ru>Французский</ru>
+      <fr>Français</fr>
+      <si>ප්‍රංශ</si>
+    </fr>
+    <it>
+      <en>Italian</en>
+      <ar>الايطالية</ar>
+      <de>Italienisch</de>
+      <pl>Włoski</pl>
+      <es>Italiano</es>
+      <ru>Итальянский</ru>
+      <fr>Italien</fr>
+      <si>ඉතාලි</si>
+    </it>
+    <de>
+      <en>German</en>
+      <ar>الألمانية</ar>
+      <de>Deutsch</de>
+      <pl>Niemiecki</pl>
+      <es>Alemán</es>
+      <ru>Немецкий</ru>
+      <fr>Allemand</fr>
+      <si>ජර්මන්</si>
+    </de>
+    <es>
+      <en>Spanish</en>
+      <ar>الاسبانية</ar>
+      <de>Spanisch</de>
+      <pl>Hiszpański</pl>
+      <es>Español</es>
+      <ru>Испанский</ru>
+      <fr>Espagnol</fr>
+      <si>ස්පාඥ්ඥ</si>
+    </es>
+    <ar>
+      <en>Arabic</en>
+      <ar>العربية</ar>
+      <de>Arabisch</de>
+      <pl>Arabski</pl>
+      <es>Árabe</es>
+      <ru>Арабский</ru>
+      <fr>Arabe</fr>
+      <si>අරාබි</si>
+    </ar>
+    <pt>
+      <en>Portuguese</en>
+      <ar>البرتغالية</ar>
+      <de>Portugiesisch</de>
+      <pl>Portugalski</pl>
+      <es>Portugués</es>
+      <ru>Португальский</ru>
+      <fr>Portugais</fr>
+      <si>පෘතුගීසි</si>
+    </pt>
+    <ru>
+      <en>Russian</en>
+      <ar>الروسية</ar>
+      <de>Russisch</de>
+      <pl>Rosyjski</pl>
+      <es>Ruso</es>
+      <ru>Русский</ru>
+      <fr>Russe</fr>
+      <si>රුසියානු</si>
+    </ru>
+    <pl>
+      <en>Polish</en>
+      <ar>البولندية</ar>
+      <ru>Польский</ru>
+      <fr>Polonais</fr>
+      <pl>Polski</pl>
+      <de>Polnisch</de>
+      <es>Polaco</es>
+      <si>පෝලිෂ්</si>
+    </pl>
+    
+    <Levels_Completed>
+      <en>Levels Completed</en>
+      <ar>المراحل المكملة</ar>
+      <de>Levels abgeschlossen</de>
+      <pl>Poziomy ukończone</pl>
+      <es>Niveles completados</es>
+      <ru>Уровни завершены</ru>
+      <fr>Niveaux terminés</fr>
+      <si>සම්පූර්ණ කරන ලද මට්ටම්</si>
+    </Levels_Completed>
+    
+    <BrowseLevels_Review_The_Course>
+      <en>Review the course</en>
+      <ar>راجع هذه المرحلة</ar>
+      <de>Den Kurs auswerten</de>
+      <pl>Przejrzyj test</pl>
+      <es>Repasar el curso</es>
+      <ru>Проверить курс</ru>
+      <fr>Revoir le cours</fr>
+      <si>පාඨමාලාව සමලෝචනය කරන්න</si>
+    </BrowseLevels_Review_The_Course>
+    
+    <Browse_Levels_TakeTheTestAgain>
+      <en>Take the test</en>
+      <ar>قم بالإختبار</ar>
+      <de>Den Test beginnen</de>
+      <pl>Napisz test</pl>
+      <es>Hacer el examen</es>
+      <ru>Пройти тест</ru>
+      <fr>Passer le test</fr>
+      <si>පරීක්ෂණය කරන්න</si>
+    </Browse_Levels_TakeTheTestAgain>
+    
+    <Browse_Levels_LastScore>
+      <en>Last score</en>
+      <ar>اخر نتيجة</ar>
+      <de>Letzte Punktzahl</de>
+      <pl>Ostatni wynik</pl>
+      <es>Última puntuación</es>
+      <ru>Последний результат</ru>
+      <fr>Dernier score</fr>
+      <si>අවසන් ලකුණු</si>
+    </Browse_Levels_LastScore>
+  </texts>
+</website>

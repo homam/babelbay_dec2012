@@ -1,0 +1,136 @@
+﻿@import "./prefixer.less";
+
+#myWords_empty 
+{
+	margin: 27px auto;
+	width: 200px;
+	text-align: center;
+}
+
+.mywords-title {
+	.box-shadow(inset 0px 2px 2px #003d81);
+	height: 25px;
+	width: 100%;
+	padding: 5px 0 0 0;
+	margin: 0;
+	border: none;
+	background-color: #005797;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+.mywords 
+{
+	background-color: #E7E7E7;
+	padding: 10px 10px 10px 10px;
+	min-width: 200px;
+}
+
+ul.mywords_table {
+	.box-shadow(0px 2px 2px #d2d2d2);
+	.border-radius(10px);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #888;
+	font-size: 14px;
+	line-height: 150%;
+	background-color: #CCC;
+	border: 1px solid #C1C1C1;
+}
+
+ul.mywords_table li {
+	list-style: none;
+	margin: 0;
+	clear: both;
+	.transition(All 1s ease);
+
+	&.deleting 
+    {
+    	.opacity(.1)
+    }
+}
+
+
+ul.mywords_table li
+{
+	&.first 
+    {
+		.mywords_cell  
+		{
+			.border-radius4(8px, 8px, 0, 0);
+		}
+    }
+	&.last 
+    {
+		.mywords_cell  
+		{
+			.border-radius4(0, 0, 8px, 8px);
+		}    
+    }
+	&.first.last 
+    {
+		.mywords_cell  
+		{
+			.border-radius4(8px, 8px, 8px, 8px);
+		}    
+    }
+}
+
+.mywords_cell  {
+
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	color: #858585;
+	text-align: left;
+	text-decoration: none;
+	line-height: 34px;
+	.border-radius(0px);
+	.box-shadow2(inset 0px 1px 0 #fff, 0px 1px 0 #B5B5B5);
+	border-bottom: 1px solid #C1C1C1;
+	background-color: white;
+	box-shadow: 0px 1px 0 #c1c1c1;
+
+	.mywords_speaker {
+		margin: 15px 0 0 10px;
+		float: left;
+	}
+	
+	.mywords_container 
+	{
+		margin: 0;
+		padding:13px 50px 13px 50px;
+		line-height: normal;
+		float: none;
+
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-weight: bold;
+			color: #484848;
+		}
+
+		span {
+        	font-weight: normal;
+        }
+	}
+
+	.mywords_trash {
+		margin: 15px 10px 0 0;
+		float: right;	
+	}
+}
+
+
+.mywords_loadmore {
+	display: block;
+	margin: 0 auto 0 auto;
+	padding: 12px 0 0 0;
+	text-decoration: none;
+	text-align: center;
+	color: #484848;
+}

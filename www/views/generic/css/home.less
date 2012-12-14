@@ -1,0 +1,218 @@
+﻿@import "./prefixer.less";
+
+body.home
+{
+	background-color:#0068B5;
+
+	.container 
+    {
+    	background-color: #ffffff;
+		padding:0 10px 10px 10px;
+    }
+}
+
+body.n-rtl
+{
+	.wordoftheday
+    {
+		span 
+        {
+        	direction:rtl;
+        }
+    }
+}
+
+body.n-ltr
+{
+	.wordoftheday
+    {
+		span 
+        {
+        	direction:ltr;
+        }
+    }
+}
+
+body.t-rtl
+{
+	.wordoftheday
+    {
+		em 
+        {
+        	direction:rtl;
+        }
+    }
+}
+
+body.t-ltr
+{
+	.wordoftheday
+    {
+		em 
+        {
+        	direction:ltr;
+        }
+    }
+}
+
+
+
+.wordoftheday {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+
+	h2 
+    {
+    	margin: 0;
+		padding: 0;
+		font-size: 10px;
+		color: #424242;
+    }
+
+	h1 
+    {
+    	margin: 0;
+		padding: 0;
+		font-size: 14px;
+		color: #0068B5;
+    }
+}
+
+a.redg {
+    .gradient(#F71926, #F71926,#E10F1C);
+	&:hover {
+		.gradient(#fb273b, #fb273b, #f2172b);
+    }
+}
+
+a.orangeg {
+	.gradient(#FE883B, #FE883B, #E54312);
+	&:hover {
+		.gradient(#ffc85b, #ffc85b, #f3671c);
+    }
+}
+
+a.yellowg {
+	.gradient(#FFC10F, #FFC10F, #F79A1D);
+	&:hover {
+		.gradient(#ffe317, #ffe317, #fbd12d);
+    }
+}
+
+a.limeg {
+	.gradient(#a6c41b, #a6c41b, #94b209 );
+	&:hover {
+		.gradient(#d6e42a, #d6e42a, #cedc0e);
+    }
+}
+
+a.greeng {
+	.gradient(#3bb237, #3bb237, #1f9d1a);
+	&:hover {
+		.gradient(#5bdc55, #5bdc55, #30d22a);
+    }
+}
+
+a.mainbtn {
+	height: 80px;
+	display: block;
+	border: none;
+	padding: 5px 0 5px 0;
+	margin: 10px 0 0 0;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	
+	.icon {
+		padding: 10px 15px 5px 15px;
+		vertical-align: middle;
+		width: 50px;
+		height: 30px;
+	}
+}
+
+
+
+
+
+a.featurebtn {
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	padding: 15px 0 15px 0;
+	margin: 5px auto 0 auto;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 130%;
+
+	.icon {
+		float: left;
+		padding: 0 0 0 10px;
+		vertical-align: middle;
+		width: 50px;
+		height: 30px;
+	}
+	>span
+    {
+    	display: block;
+		float: none;	
+		margin: 0 5px 0 60px;
+		background-image: url('views/generic/bb2images/home/arrow-main.png');
+		background-repeat: no-repeat;
+		background-position: right center;
+    }
+	.navarrow{
+		margin:0;
+		padding:0;
+		vertical-align:middle;
+		width:14px;
+		height:11px;
+	}
+}
+
+
+/* footer links */
+.footer_navs {
+    color: white;
+	border: none;
+	text-align: center;
+	background-color: #0068B5;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	clear: both;
+
+	a
+    {
+		padding:10px;
+		color: white;
+		text-decoration: none;
+		float:left;
+    }
+	a:hover 
+    {
+	    color: yellow;	
+	}
+}
+
+body.html5 
+{
+	background-color: #ffffff;
+
+	.footer_navs 
+    {
+    	position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+    }
+
+}

@@ -1,0 +1,102 @@
+﻿@import "./prefixer.less";
+
+#browseLevels 
+{
+	a.button 
+    {
+		color: #ffffff;
+		font-weight:bold;
+		text-align:left;
+		.gradient(#A6C41B, #A6C41B, #94B209);
+		
+		width: 196px;
+		margin-left: auto;
+		padding-left: 9px;
+		margin-right: auto;
+
+		&.na 
+        {
+			.gradient(#EEE, #AAA, #EEE);
+			&:hover
+            {
+				.gradient(#EEE, #AAA, #EEE);	
+            }
+        }
+
+		&:hover
+        {
+			.gradient(#D6E42A, #D6E42A, #CEDC0E);
+		}
+
+		img 
+		{
+    		padding: 2px 5px 0 0;
+			vertical-align: middle;
+			float: right;
+			width: 14px;
+			height: 11px;
+			border: 0;
+		}
+    }
+}
+.submenu {
+    margin: 0;
+    padding: 0 0 5px 0;
+    display: none;
+}
+.submenuarrow {
+    background: url(/views/generic/bb2images/browselevels/arrow-submenu.png) no-repeat;
+    width: 7px;
+    height: 5px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    display: block;
+}
+         
+
+.submenubox {
+    margin: 0 auto 0 auto;
+    padding: 5px;
+    display: block;
+    width: 200px;
+    background: #E0E5CA;
+    border: none;
+	.border-radius(8px);
+	.box-shadow(0px 2px 2px #666);
+    list-style: none;
+    color: #4E7300;
+    text-decoration: none;
+    text-align: center;
+
+	span 
+    {
+    	color: #D53538;
+		font-weight: bold;
+    }
+}
+
+.submenubox a {
+	padding: 5px;
+	margin: 5px auto 0 auto;
+	width: 180px;
+	display: block;
+	clear: both;
+	border: none;
+	.border-radius(8px);
+	.box-shadow(0 1px 0 #fff);
+	list-style: none;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+
+	.gradient(#618A0A, #618A0A, #497102);
+
+	&:hover 
+    {
+		.gradient(#A6C41B, #A6C41B, #94B209);
+    }
+}
+
+
+
